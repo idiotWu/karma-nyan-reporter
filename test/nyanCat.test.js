@@ -459,7 +459,7 @@ describe('nyanCat.js test suite', function() {
                                            sut.options.suppressErrorReport));
 
       ok(printersFake.printStats.calledOnce);
-      ok(printersFake.printStats.calledWithExactly(sut.stats._sum));
+      ok(printersFake.printStats.calledWithExactly(sut.stats));
 
       ok(printersFake.printBrowserLogs.calledOnce);
       ok(printersFake.printBrowserLogs.calledWithExactly(sut.browser_logs));
